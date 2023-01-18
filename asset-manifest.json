@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/web_test/static/css/main.c9dfc3d0.css",
+    "main.js": "/web_test/static/js/main.f7442c48.js",
+    "index.html": "/web_test/index.html",
+    "main.c9dfc3d0.css.map": "/web_test/static/css/main.c9dfc3d0.css.map",
+    "main.f7442c48.js.map": "/web_test/static/js/main.f7442c48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9dfc3d0.css",
+    "static/js/main.f7442c48.js"
+  ]
+}
