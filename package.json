@@ -3,7 +3,7 @@
   "name": "holly-react",
   "description": "React version of Holly",
   "author": "Luke McDonald (https://lukemcdonald.com/)",
-  "homepage": "https://cellanet.github.io/web_test",
+  "homepage": "https://cellanet.github.io/web_test/",
   "keywords": [],
   "license": "MIT",
   "repository": {
@@ -14,17 +14,16 @@
     "url": "https://github.com/lukemcdonald/holly-react/issues"
   },
   "scripts": {
-    "build": "npm run build:css && vite build",
+    "build": "react-scripts build",
     "build:css": "postcss styles/tailwind.css -o src/assets/styles.css",
     "dev": "concurrently \"npm run dev:css\" \"vite\"",
     "dev:css": "postcss styles/tailwind.css -o src/assets/styles.css --watch",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "clsx": "^1.2.1",
-    "gh-pages": "^4.0.0",
     "postcss-import": "^15.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -43,6 +42,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "prettier": "^2.8.2",
