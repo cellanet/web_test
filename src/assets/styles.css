@@ -29,10 +29,8 @@
 */
 html {
   line-height: 1.5; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -moz-tab-size: 4; /* 3 */
-  -o-tab-size: 4;
-     tab-size: 4; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 2 */ /* 3 */
+  tab-size: 4; /* 3 */
   font-family: Fira Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
   font-feature-settings: normal; /* 5 */
 }
@@ -262,10 +260,6 @@ textarea {
 1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
-input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1; /* 1 */
-  color: #94a3b8; /* 2 */
-}
 input::placeholder,
 textarea::placeholder {
   opacity: 1; /* 1 */
@@ -313,9 +307,7 @@ video {
   display: none;
 }
 [type='text'],[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: #fff;
   border-color: #64748b;
   border-width: 1px;
@@ -339,10 +331,6 @@ video {
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   border-color: #2563eb;
-}
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #64748b;
-  opacity: 1;
 }
 input::placeholder,textarea::placeholder {
   color: #64748b;
@@ -377,9 +365,7 @@ select {
           print-color-adjust: unset;
 }
 [type='checkbox'],[type='radio'] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   padding: 0;
   -webkit-print-color-adjust: exact;
           print-color-adjust: exact;
@@ -387,7 +373,6 @@ select {
   vertical-align: middle;
   background-origin: border-box;
   -webkit-user-select: none;
-     -moz-user-select: none;
           user-select: none;
   flex-shrink: 0;
   height: 1rem;
@@ -589,6 +574,10 @@ select {
 .prose {
   color: var(--tw-prose-body);
   max-width: 65ch;
+}
+.prose :where(p):not(:where([class~="not-prose"] *)) {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
 }
 .prose :where([class~="lead"]):not(:where([class~="not-prose"] *)) {
   color: var(--tw-prose-lead);
@@ -884,10 +873,6 @@ select {
   --tw-prose-invert-td-borders: #374151;
   font-size: 1rem;
   line-height: 1.75;
-}
-.prose :where(p):not(:where([class~="not-prose"] *)) {
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
 }
 .prose :where(video):not(:where([class~="not-prose"] *)) {
   margin-top: 2em;

@@ -8,11 +8,11 @@ export default function FaqsPage() {
     <Layout>
       <Article>
         <ArticleContent title="FAQ's">
-          <p>Add your FAQ content here.</p>
+          <p>Lười lắm đừng hỏi!</p>
         </ArticleContent>
 
         <ArticleMedia>
-          <img src="https://picsum.photos/420/640" alt="Lorem Picsum" />
+          <img src="./assets/face.jpeg" alt="hai to bun bo" />
         </ArticleMedia>
       </Article>
     </Layout>

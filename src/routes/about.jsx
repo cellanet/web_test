@@ -7,22 +7,20 @@ export default function AboutPage() {
   return (
     <Layout>
       <Article>
-        <ArticleContent title="About">
+        <ArticleContent title="About Bún">
           <p>
-            Holly is a free HTML/CSS landing page designed and developed by
-            @pacovitiello and @DavidePacilio!
+            Bún Bò ? Bún Bò, Bún Bò Bún Bò Bún Bò. Bún Bò Bún!
           </p>
           <p>
-            Holly is suitable for all kind of startups, it's easily
-            customizable, and it's downloadable for personal and commercial use.
+            Bún Bò Bún Bò Bún Bò Bún Bò. Bún Bò?! Bún Bò Bò.
           </p>
-          <p>This template is distributed under the MIT License.</p>
+          <p>Bún Bò!!!</p>
         </ArticleContent>
 
         <ArticleMedia>
           <img
-            src="https://picsum.photos/420/640?grayscale"
-            alt="Lorem Picsum"
+            src="./assets/face.jpeg"
+            alt="Bún Bò."
           />
         </ArticleMedia>
       </Article>

@@ -7,12 +7,12 @@ export default function ContactPage() {
   return (
     <Layout>
       <Article>
-        <ArticleContent title="Contact">
-          <p>Add your contact information here.</p>
+        <ArticleContent title="Contact tui chi?">
+          <p>TranThiQuyen@MotToBunBoChoBanBunBo.com</p>
         </ArticleContent>
 
         <ArticleMedia>
-          <img src="https://picsum.photos/420/640" alt="Lorem Picsum" />
+          <img src="./assets/face.jpeg" alt="mot to bun bo hoy" />
         </ArticleMedia>
       </Article>
     </Layout>

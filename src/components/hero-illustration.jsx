@@ -350,7 +350,7 @@ export function HeroIllustration() {
               />
             </filter>
           </defs>
-          <g fill="none" fillRule="evenodd">
+          {/* <g fill="none" fillRule="evenodd">
             <rect
               width="800"
               height="450"
@@ -427,7 +427,7 @@ export function HeroIllustration() {
                 fill="url(#browser-n)"
               />
             </g>
-          </g>
+          </g> */}
         </svg>
       </div>
       <div

@@ -8,11 +8,11 @@ export default function SupportPage() {
     <Layout>
       <Article>
         <ArticleContent title="Support">
-          <p>Add your support content here.</p>
+          <p>Hem có support gì đâu nhe.</p>
         </ArticleContent>
 
         <ArticleMedia>
-          <img src="https://picsum.photos/420/640" alt="Lorem Picsum" />
+          <img src="./assets/face.jpeg" alt="bun la tui" />
         </ArticleMedia>
       </Article>
     </Layout>

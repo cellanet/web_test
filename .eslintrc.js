@@ -15,8 +15,9 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'prettier/prettier': 0,
     'no-undef': 'off',
-    'prettier/prettier': 'error',
+    // 'prettier/prettier': 'error',
     'react/prop-types': 0,
     'react/no-unescaped-entities': 0,
   },
